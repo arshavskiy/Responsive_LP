@@ -435,7 +435,7 @@ section.forth .text-container .media-box ul li .num {
 section.forth .text-container .media-box ul li .text {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
   color: rgba(0, 0, 0, 0.625);
 }
 @media (max-width: 1199px) {
