@@ -468,6 +468,12 @@ section.fifth .container-fluid:nth-child(2) {
   padding-top: 100px;
   margin-bottom: -100px;
 }
+@media (max-width: 768px) {
+  section.fifth .container-fluid:nth-child(2) {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
 section.fifth .orange-text-container {
   background: #fd7d04;
   text-align: center;
