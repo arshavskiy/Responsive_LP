@@ -373,7 +373,7 @@ section.forth button.ditails {
   margin-bottom: 20px;
   width: 170px;
   height: 55px;
-  font-size: 22px;
+  font-size: 18px;
   border-radius: 0;
 }
 @media (max-width: 1199px) {
@@ -436,6 +436,7 @@ section.forth .text-container .media-box ul li .text {
   text-align: center;
   padding: 10px;
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.625);
 }
 @media (max-width: 1199px) {
   section.forth .text-container .media-box ul li .text {
