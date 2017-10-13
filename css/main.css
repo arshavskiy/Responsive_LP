@@ -216,7 +216,8 @@ section.first .talk {
 section.first .arrow:before {
   content: '\2794';
   position: absolute;
-  left: 12%;
+  left: 50%;
+  margin-left: -60px;
   color: #000;
   font-size: 18px;
   transform: rotate(90deg);
@@ -383,7 +384,8 @@ section.forth button.ditails {
 section.forth .arrow:before {
   content: '\2794';
   position: absolute;
-  left: 5%;
+  left: 50%;
+  margin-left: -60px;
   top: 15px;
   color: #000;
   font-size: 17px;
@@ -464,10 +466,6 @@ section.fifth h4 {
     padding-bottom: 40px;
   }
 }
-section.fifth .container-fluid:nth-child(2) {
-  padding-top: 100px;
-  margin-bottom: -100px;
-}
 @media (max-width: 768px) {
   section.fifth .container-fluid:nth-child(2) {
     padding-top: 0;
@@ -521,13 +519,9 @@ section.fifth .form-container button#sendForm {
 section.fifth .form-container button#sendForm:after {
   content: "\2190";
   position: absolute;
-  left: 30%;
+  left: 50%;
+  margin-left: -40px;
   color: white;
-}
-@media (max-width: 992px) {
-  section.fifth .form-container button#sendForm:after {
-    left: 25%;
-  }
 }
 section.fifth .form-container button#okForm {
   display: none;
@@ -541,15 +535,11 @@ section.fifth .form-container button#okForm {
 section.fifth .form-container button#okForm:after {
   content: "\2713";
   position: absolute;
-  right: 10%;
+  right: 50%;
+  margin-right: -60px;
   font-size: 19px;
   top: 15px;
   color: white;
-}
-@media (max-width: 992px) {
-  section.fifth .form-container button#okForm:after {
-    right: 5%;
-  }
 }
 section.fifth .form-container button#sendForm.hidden:after {
   display: none;
