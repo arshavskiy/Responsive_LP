@@ -8,10 +8,12 @@ function submitForm(send, ok) {
     $(send).click(function () {
         var phone = $('#phone').val();
         var name = $('#name').val();
+        var regName = new RegExp('^[א-ת ]{2,30}$'),
+            validateName = regName.test(name);
         var regPhone = /[0]\d{9}/,
             validatePhone = regPhone.test(phone);
 
-        if (validatePhone && name) {
+        if (validatePhone && validateName) {
 
             $(this).addClass('hidden');
             $(ok).show();
@@ -21,10 +23,19 @@ function submitForm(send, ok) {
                 $('#phone').val('');
                 $('#name').val('');
             }, 2000);
-        } else {
+        } else if (phone === '' || name === '') {
+            $('#name').val('נא למלה את שני השדות');
+            setTimeout(function () {
+                $('#name').val('');
+            }, 2000);
+        } else if (!validatePhone) {
             $('#phone').val('נא להכניס מספר תקין');
             setTimeout(function () {
                 $('#phone').val('');
+            }, 2000);
+        } else if (!validateName) {
+            $('#name').val('נא להכניס שם בעברית בלבד');
+            setTimeout(function () {
                 $('#name').val('');
             }, 2000);
         }
