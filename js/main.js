@@ -1,9 +1,3 @@
-$(document).on('ready', function () {
-    smoothScrol();
-    slickInit();
-    submitForm('#sendForm', '#okForm');
-});
-
 function submitForm(send, ok) {
     $(send).click(function () {
         var phone = $('#phone').val();
@@ -87,38 +81,9 @@ function smoothScrol() {
         });
 }
 
-// $(document).ready(function () {
-//     $('a[href^="#"]').on('click', function (e) {
-//         e.preventDefault();
 
-//         var target = this.hash;
-//         var $target = $(target);
-
-//         $('html, body').stop().animate({
-//             'scrollTop': $target.offset().top
-//         }, 900, 'swing', function () {
-//             window.location.hash = target;
-//         });
-//     });
-// });
-
-// var myHeader = $('#logo');
-// myHeader.data('position', myHeader.position());
-// $(window).scroll(function () {
-//     var hPos = myHeader.data('position'),
-//         scroll = getScroll();
-//     if (hPos.top < scroll.top - 100) {
-//         myHeader.addClass('fixed');
-//     } else {
-//         myHeader.removeClass('fixed');
-//     }
-// });
-
-// function getScroll() {
-//     var b = document.body;
-//     var e = document.documentElement;
-//     return {
-//         left: parseFloat(window.pageXOffset || b.scrollLeft || e.scrollLeft),
-//         top: parseFloat(window.pageYOffset || b.scrollTop || e.scrollTop)
-//     };
-// }
+$(document).on('ready', function () {
+    smoothScrol();
+    slickInit();
+    submitForm('#sendForm', '#okForm');
+});
